@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Rock+Salt" rel="stylesheet">
+  <title>The Psychic Game</title>
+</head>
+
+<body>
+  <style>
+    #front {
+      font-family: 'Indie Flower', cursive;
+      font-size: 200px;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    #top {
+      font-family: 'Rock Salt', cursive;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    #one {
+      position: relative;
+      top: 150px;
+      color: turquoise;
+      font-size: 36px;
+    }
+  </style>
+
+  <div class="container" id="front">
+    <div class="Jumbotron" style="background:white;">
+      <image
+        src="C:\Users\troyk\Desktop\Pyschic_Game\Pyschic Game\assets\images\crystalball.png">
+        <div class="card-img-overlay">
+          <h1 id="one">?? Are you a Clarvoyant ??</h1>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card text-center">
+        <div class="card-header">
+          <h1 id="top">Guess what letter I'm thinking of</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h1 id="top" class="card-title text-white bg-success">Wins: <span id="wins">0</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h1 id="top" class="card-title text-white bg-danger">Losses:
+            <span id="losses">0</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h1 id="top">Guesses Left:
+            <span id="attempts"></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body ">
+          <h1 id="top">Your Guesses so far: <span id="players-turn"></span></h1>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
